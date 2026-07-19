@@ -4,29 +4,33 @@
 @font-face {
   font-family: "Archivo Black";
   src:
-    url("../src/fonts/ArchivoBlack-Regular.woff") format("woff"),
-    url("../src/fonts/ArchivoBlack-Regular.woff2") format("woff2");
+    url("../src/fonts/ArchivoBlack-Regular.woff2") format("woff2"),
+    url("../src/fonts/ArchivoBlack-Regular.woff") format("woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   src:
-    url("../src/fonts/OpenSans-Regular.woff") format("woff"),
-    url("../src/fonts/OpenSans-Regular.woff2") format("woff2");
+    url("../src/fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../src/fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   src:
-    url("../src/fonts/OpenSans-Bold.woff") format("woff"),
-    url("../src/fonts/OpenSans-Bold.woff2") format("woff2");
+    url("../src/fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../src/fonts/OpenSans-Bold.woff") format("woff");
   font-weight: 600;
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
   src:
-    url("../src/fonts/OpenSans-SemiBold.woff") format("woff"),
-    url("../src/fonts/OpenSans-SemiBold.woff2") format("woff2");
+    url("../src/fonts/OpenSans-SemiBold.woff2") format("woff2"),
+    url("../src/fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 700;
+  font-display: swap;
 }
 /*--------------------------------------------------------------------
 --------------------- Reinicio general--------------------------------
@@ -36,23 +40,21 @@
   padding: 0;
   box-sizing: border-box;
   /* DEBUG */
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 /*--------------------------------------------------------------------
 --------------------- General-----------------------------------------
 --------------------------------------------------------------------*/
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   line-height: 1.6;
   background-color: black;
   color: #ffffff;
-  display: flex;
-  justify-content: center;
 }
 .main {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  max-width: 1200px;
   gap: 100px;
   margin: auto;
   padding: 0 120px;
@@ -84,33 +86,35 @@ body {
   font-family: "Archivo Black";
   font-weight: 400;
   font-size: 72px;
-  line-height: 100%;
+  line-height: 1.6;
   margin-top: 49px;
   margin-bottom: 15px;
 }
 /*----Profesion-----------------------------------------------------*/
 .header__profesion {
   width: 100%;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1.6;
   margin: 0px;
   color: #ffffff80;
 }
 /*----Descripcion de perfil-----------------------------------------*/
 .header__description {
   width: 100%;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 160%;
+  line-height: 1.6;
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.header__image {
+  position: relative;
+}
 /*----Fotos de perfil-----------------------------------------------*/
 .header__foto {
-  position: absolute;
   width: 387px;
   height: 500px;
   z-index: 1;
@@ -123,8 +127,9 @@ body {
   background: #6d6dff;
   border-radius: 50%;
   filter: blur(300px);
-  top: 200px;
-  right: 90px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 0;
 }
 /*----Acciones------------------------------------------------------*/
@@ -152,31 +157,25 @@ body {
   gap: 12px;
   text-decoration: none;
 }
-.rectangulo {
-  background: linear-gradient(90deg, #4c1a97 0%, #6d6dff 100%);
-  width: 100%;
-  height: 5px;
-}
+
 /*----Texto de los botones de acciones------------------------------*/
 .header__item_btn__text {
-  font-family: "Open Sans";
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 1.6;
+  letter-spacing: 0;
   color: #ffffff80;
 }
 /*----Efecto del texto de los botones de acciones-------------------*/
-.header__item_btn__text:hover {
+.header__item_btn:hover {
   color: #ffffff;
 }
-/*----Imagenes decorativas botones de acciones----------------------*/
-.header__image {
-  position: relative;
-  display: flex;
-  justify-content: center;
+/*----Decoraciones de botones de acciones----------------------*/
+.header__item_btn__decoration {
+  background: linear-gradient(90deg, #4c1a97 0%, #6d6dff 100%);
   width: 100%;
-  height: 500px;
-  z-index: 1000;
+  height: 5px;
 }
 /*--------------------------------------------------------------------
 ---------------------Habilidades--------------------------------------
@@ -187,13 +186,18 @@ body {
 .habilidades__title {
   text-align: left;
   margin-bottom: 50px;
+  font-family: "Archivo Black";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: 0;
 }
 .habilidades__icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: calc(100% / 6 - 50px);
+  justify-content: space-between;
 }
 .habilidades__icon {
   width: 50px;
@@ -202,41 +206,76 @@ body {
 /*--------------------------------------------------------------------
 --------------------- Proyectos---------------------------------------
 --------------------------------------------------------------------*/
-.proyectos__cards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
-}
 .proyectos__title {
   text-align: left;
   margin-bottom: 50px;
+  font-family: "Archivo Black";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+.proyectos__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
 }
 .proyectos__card {
   background-color: #1c1c1c;
-  flex: 1;
   text-align: left;
   padding-bottom: 30px;
   z-index: 1;
 }
 .proyectos__screen {
   width: 100%;
-  height: 330px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
   display: block;
-  margin-bottom: 30px;
+}
+.proyectos__tec_icons {
+  display: flex;
+  position: relative;
+  top: -52px;
+  margin: 0px;
+}
+.proyectos__tec_icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.proyectos__description-title {
+  margin-bottom: 20px;
+  padding: 0px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.6;
+  letter-spacing: 0;
 }
 .proyectos__description-links {
   display: flex;
+  align-items: end;
   flex-direction: row;
   gap: 20px;
   margin-left: 30px;
   flex-wrap: wrap;
   list-style: none;
 }
+.proyectos__description-link__btn {
+  opacity: 0.5;
+}
+.proyectos__description-link__btn:hover {
+  opacity: 1;
+}
 .proyectos__description-text {
   margin-bottom: 30px;
+  padding: 0px 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
 }
 /*--------------------------------------------------------------------
 --------------------- Contactos---------------------------------------
@@ -245,6 +284,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 .contact__glow {
   position: absolute;
@@ -254,7 +294,21 @@ body {
   border-radius: 50%;
   filter: blur(250px);
   z-index: 0;
-  left: calc(100% / 2 - 190px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact__title {
+  font-family: Archivo Black;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+.mail {
+  opacity: 0.5;
+}
+.mail:hover {
+  opacity: 1;
 }
 .contact__icons {
   display: flex;
@@ -262,7 +316,14 @@ body {
   gap: 30px;
   margin-top: 30px;
 }
-
+.contact__icon {
+  opacity: 0.5;
+}
+.contact__icon:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
 /* Tablet vertical */
 @media (max-width: 768px) {
   .main {
@@ -272,6 +333,7 @@ body {
     grid-template-columns: 2fr 216px;
   }
   .header__name {
+    font-size: 58px;
     margin-top: 0px;
   }
 
@@ -285,5 +347,65 @@ body {
   }
 }
 /* Celular */
-@media (max-width: 320px) {
+@media (max-width: 480px) {
+  .main {
+    padding: 0 20px;
+  }
+  .header__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    margin-top: 40px;
+  }
+  .header__name {
+    font-size: 36px;
+  }
+  .header__profesion {
+    font-size: 16px;
+  }
+  .header__description {
+    font-size: 16px;
+  }
+  .header__image {
+    height: 280px;
+  }
+  .header__foto {
+    width: 280px;
+    height: 280px;
+  }
+  .header__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .habilidades__title {
+    font-size: 28px;
+  }
+  .habilidades__icons {
+    justify-content: left;
+    gap: 53px;
+  }
+  .habilidades__icon {
+    width: 30px;
+    height: 30px;
+  }
+  .proyectos__title {
+    font-size: 28px;
+  }
+  .proyectos__screen {
+    height: 160px;
+  }
+  .proyectos__tec_icons {
+    top: -25px;
+  }
+  .proyectos__tec_icon {
+    width: 20px;
+    height: 20px;
+  }
+  .proyectos__description-text {
+    font-size: 16px;
+  }
+  .contact__title {
+    font-size: 28px;
+  }
 }
