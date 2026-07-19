@@ -1,0 +1,26 @@
+# Dependencias
+node_modules/
+
+# Archivos generados
+dist/
+build/
+
+# Cobertura de pruebas
+coverage/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos comprimidos
+*.zip
+
+# PDF
+*.pdf
+
+# Recursos estáticos
+src/fonts/
+src/img/
+
+# Archivos de configuración
+package-lock.json

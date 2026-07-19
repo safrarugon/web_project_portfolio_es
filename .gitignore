@@ -1,0 +1,27 @@
+# Dependencias
+node_modules/
+
+# Carpetas de compilación
+dist/
+build/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Variables de entorno
+.env
+.env.local
+
+# Configuración de VS Code
+.vscode/
+
+# Archivos temporales
+*.tmp
+*.swp
+
+# Cobertura
+coverage/
