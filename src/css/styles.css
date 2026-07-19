@@ -475,4 +475,7 @@ body {
   .contact__title {
     font-size: 28px;
   }
+  /*----Contenedor de la descripcion del proyecto---------------------*/
+.proyectos__description {
+  padding: 10px;
 }
