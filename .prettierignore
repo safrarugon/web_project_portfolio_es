@@ -24,3 +24,6 @@ src/img/
 
 # Archivos de configuración
 package-lock.json
+
+#Archivo CSS de normalización
+src/css/normalize.css
