@@ -271,12 +271,11 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 24px;
+  padding: 0px 30px;
 }
 /*----Titulo de la descripción del proyecto-------------------------*/
 .proyectos__description-title {
   margin-bottom: 20px;
-  padding: 0px 30px;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -286,7 +285,6 @@ body {
 /*----Texto de la descripción del proyecto--------------------------*/
 .proyectos__description-text {
   margin-bottom: 30px;
-  padding: 0px 30px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -477,6 +475,6 @@ body {
   }
   /*----Contenedor de la descripcion del proyecto---------------------*/
   .proyectos__description {
-    padding: 10px;
+    padding: 0px 10px;
   }
 }
