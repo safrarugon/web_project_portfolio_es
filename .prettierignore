@@ -19,11 +19,11 @@ Thumbs.db
 *.pdf
 
 # Recursos estáticos
-src/fonts/
-src/img/
+fonts/
+img/
 
 # Archivos de configuración
 package-lock.json
 
 #Archivo CSS de normalización
-src/css/normalize.css
+css/normalize.css

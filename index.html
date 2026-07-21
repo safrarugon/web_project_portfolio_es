@@ -9,17 +9,27 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
+  <!--Contenedor body-->
   <body>
+    <!--Contenedor main-->
     <main class="main">
+      <!--------------------------------------------------------------------
+      --------------------- Informacion principal---------------------------
+      -------------------------------------------------------------------->
+      <!----Contenedor principal------------------------------------------>
       <header class="header__container">
+        <!----Informacion principal----------------------------------------->
         <section class="header__info">
+          <!----Nombre-------------------------------------------------------->
           <h1 class="header__name">
             <span>Saul</span>
             <span>Rubio</span>
           </h1>
+          <!----Profesion----------------------------------------------------->
           <p class="header__profesion">
             Desarrolladora Full-Stack Junior | TypeScript, React, Node.js
           </p>
+          <!----Descripcion de perfil----------------------------------------->
           <p class="header__description">
             Desarrolladora web junior con experiencia práctica creando
             interfaces limpias y responsivas con HTML, CSS, JavaScript y React,
@@ -30,44 +40,61 @@
             por seguir aprendiendo, asumir nuevos retos y aprovechar
             oportunidades para crecer como desarrolladora.
           </p>
+          <!----Acciones------------------------------------------------------>
+          <!----Acciones contenedor general----------------------------------->
           <ul class="header__actions">
+            <!----Acciones contenedor items------------------------------------->
             <li class="header__item">
+              <!----Botones de acciones------------------------------------------->
               <a
                 class="header__item_btn"
                 href="./documents/CV_Saul_Rubio.pdf"
                 download="CV_Saul_Rubio.pdf"
               >
+                <!----Texto de los botones de acciones------------------------------>
                 <span class="header__item_btn__text">Descargar CV</span>
+                <!----Decoraciones de botones de acciones--------------------------->
                 <div class="header__item_btn__decoration"></div>
               </a>
             </li>
-
+            <!----Acciones contenedor items------------------------------------->
             <li class="header__item">
+              <!----Botones de acciones------------------------------------------->
               <a
                 class="header__item_btn"
                 href="https://github.com/safrarugon"
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <!----Texto de los botones de acciones------------------------------>
                 <span class="header__item_btn__text"> Enlace a GitHub </span>
+                <!----Decoraciones de botones de acciones--------------------------->
                 <div class="header__item_btn__decoration"></div>
               </a>
             </li>
+            <!----Acciones contenedor items------------------------------------->
             <li class="header__item">
+              <!----Botones de acciones------------------------------------------->
               <a
                 class="header__item_btn"
                 href="https://wa.me/525571960201?text=Hola,%20Saul.%20Vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo."
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <!----Texto de los botones de acciones------------------------------>
                 <span class="header__item_btn__text"> Hablemos </span>
+                <!----Decoraciones de botones de acciones--------------------------->
                 <div class="header__item_btn__decoration"></div>
               </a>
             </li>
           </ul>
         </section>
+        <!----Seccion de las imagen de perfil------------------------------->
+        <!----Contenedor de imagen------------------------------------------>
         <figure class="header__image">
+          <!----Elipse decorativo--------------------------------------------->
           <div class="header__glow"></div>
+          <!----Fotos de perfil----------------------------------------------->
           <img
             class="header__foto"
             src="./img/foto.png"
@@ -75,34 +102,46 @@
           />
         </figure>
       </header>
+      <!--------------------------------------------------------------------
+      ---------------------Habilidades--------------------------------------
+      -------------------------------------------------------------------->
+      <!----Contenedores de habilidades----------------------------------->
       <section class="habilidades">
+        <!----Titulo de Seccion habilidades--------------------------------->
         <h2 class="habilidades__title">Habilidades y herramientas</h2>
+        <!----Contenedor de los iconos de habilidades----------------------->
         <div class="habilidades__icons">
+          <!----Iconos de habilidades----------------------------------------->
           <img
             class="habilidades__icon"
             src="./img/html_logo.svg"
             alt="Logotipo de HTML5"
           />
+          <!----Iconos de habilidades----------------------------------------->
           <img
             class="habilidades__icon"
             src="./img/css_logo.svg"
             alt="Logotipo de CSS3"
           />
+          <!----Iconos de habilidades----------------------------------------->
           <img
             class="habilidades__icon"
             src="./img/js_logo.svg"
             alt="Logotipo de JS"
           />
+          <!----Iconos de habilidades----------------------------------------->
           <img
             class="habilidades__icon"
             src="./img/gitbash_logo.svg"
             alt="Logotipo de Gitbash"
           />
+          <!----Iconos de habilidades----------------------------------------->
           <img
             class="habilidades__icon"
             src="./img/github_logo.svg"
             alt="Logotipo de Github"
           />
+          <!----Iconos de habilidades----------------------------------------->
           <img
             class="habilidades__icon"
             src="./img/chatgpt_logo.svg"
@@ -110,33 +149,50 @@
           />
         </div>
       </section>
-      <section class="proyectos">
-        <h2 class="proyectos__title">Proyectos destacados</h2>
-        <div class="proyectos__cards">
-          <div class="proyectos__card">
-            <img
-              class="proyectos__screen"
-              src="./img/tripleten_cafe.png"
-              alt="Captura de pantalla del sitio web Proyecto cafeteria"
-            />
-            <div class="proyectos__tec_icons">
+      <!----------------------------------------------------------------------
+      --------------------- Proyectos---------------------------------------
+      -------------------------------------------------------------------->
+      <section class="proyect">
+        <!----Titulo de la seccion de Proyectos----------------------------->
+        <h2 class="proyect__title">Proyectos destacados</h2>
+        <!----Contenedor de los proyectos----------------------------------->
+        <div class="proyect__cards">
+          <!----Contenedor de proyecto---------------------------------------->
+          <div class="proyect__card">
+            <!----Contenedor de Imagen de proyect0------------------------------>
+            <div class="proyect__screen-container">
+              <!----Imagen del proyecto------------------------------------------->
               <img
-                class="proyectos__tec_icon"
+                class="proyect__screen"
+                src="./img/tripleten_cafe.png"
+                alt="Captura de pantalla del sitio web Proyecto cafeteria"
+              />
+              <!----Decoración de imagenes de los proyectos----------------------->
+              <div class="proyect__screen_decoration"></div>
+              <!----Contenedor de los iconos de tecnología del proyecto----------->
+            </div>
+            <div class="proyect__tec_icons">
+              <!----Icono de tecnología del proyecto------------------------------>
+              <img
+                class="proyect__tec_icon"
                 src="./img/html_logo.svg"
                 alt="Logotipo de HTML5"
               />
+              <!----Icono de tecnología del proyecto------------------------------>
               <img
-                class="proyectos__tec_icon"
+                class="proyect__tec_icon"
                 src="./img/css_logo.svg"
                 alt="Logotipo de CSS3"
               />
             </div>
-
-            <div class="proyectos__description">
-              <h3 class="proyectos__description-title">
+            <!----Contenedor de la descripcion del proyecto--------------------->
+            <div class="proyect__description">
+              <!----Titulo de la descripción del proyecto------------------------->
+              <h3 class="proyect__description-title">
                 Página web de una cafetería
               </h3>
-              <p class="proyectos__description-text">
+              <!----Texto de la descripción del proyecto-------------------------->
+              <p class="proyect__description-text">
                 Desarrollo de una landing page responsiva para una cafetería
                 siguiendo un brief de diseño. Incluye estructura semántica,
                 maquetación con Flexbox, creación de secciones nuevas y un
@@ -144,8 +200,10 @@
                 diseño completo de la página, organicé el proyecto con buenas
                 prácticas y publiqué la versión final utilizando GitHub Pages.
               </p>
-              <ul class="proyectos__description-links">
-                <li class="proyectos__description-link__btn">
+              <!----Contenedor de los links al proyect---------------------------->
+              <ul class="proyect__description-links">
+                <!----Boton de los links del proyecto-------------------------------->
+                <li class="proyect__description-link__btn">
                   <a
                     href="https://safrarugon.github.io/web_project_coffeeshop_es/"
                     target="_blank"
@@ -153,7 +211,8 @@
                     ><img src="./img/demo_icon.png" alt="demo en vivo"
                   /></a>
                 </li>
-                <li class="proyectos__description-link__btn">
+                <!----Boton de los links del proyecto-------------------------------->
+                <li class="proyect__description-link__btn">
                   <a
                     href="https://github.com/safrarugon/web_project_coffeeshop_es.git"
                     target="_blank"
@@ -164,44 +223,61 @@
               </ul>
             </div>
           </div>
-          <div class="proyectos__card">
-            <img
-              class="proyectos__screen"
-              src="./img/donnysaury.png"
-              alt="Captura de pantalla del sitio web de Donny & Saury"
-            />
-            <div class="proyectos__tec_icons">
+
+          <!----Contenedor de proyecto---------------------------------------->
+          <div class="proyect__card">
+            <!----Contenedor de Imagen de proyect0------------------------------>
+            <div class="proyect__screen-container">
+              <!----Imagen del proyecto------------------------------------------->
               <img
-                class="proyectos__tec_icon"
+                class="proyect__screen"
+                src="./img/donnysaury.png"
+                alt="Captura de pantalla del sitio web Proyecto cafeteria"
+              />
+              <!----Decoración de imagenes de los proyectos----------------------->
+              <div class="proyect__screen_decoration"></div>
+              <!----Contenedor de los iconos de tecnología del proyecto----------->
+            </div>
+            <div class="proyect__tec_icons">
+              <!----Icono de tecnología del proyecto------------------------------>
+              <img
+                class="proyect__tec_icon"
                 src="./img/html_logo.svg"
                 alt="Logotipo de HTML5"
               />
+              <!----Icono de tecnología del proyecto------------------------------>
               <img
-                class="proyectos__tec_icon"
+                class="proyect__tec_icon"
                 src="./img/css_logo.svg"
                 alt="Logotipo de CSS3"
               />
+              <!----Icono de tecnología del proyecto------------------------------>
               <img
-                class="proyectos__tec_icon"
+                class="proyect__tec_icon"
                 src="./img/js_logo.svg"
                 alt="Logotipo de JS"
               />
+              <!----Icono de tecnología del proyecto------------------------------>
               <img
-                class="proyectos__tec_icon"
+                class="proyect__tec_icon"
                 src="./img/react_logo.svg"
                 alt="Logotipo de React"
               />
+              <!----Icono de tecnología del proyecto------------------------------>
               <img
-                class="proyectos__tec_icon"
-                src="./img/NodeJS_Logo.svg"
+                class="proyect__tec_icon"
+                src="./img/nodejs_logo.svg"
                 alt="Logotipo de NodeJs"
               />
             </div>
-            <div class="proyectos__description">
-              <h3 class="proyectos__description-title">
+            <!----Contenedor de la descripcion del proyecto--------------------->
+            <div class="proyect__description">
+              <!----Titulo de la descripción del proyecto------------------------->
+              <h3 class="proyect__description-title">
                 Página web de un negocio de servicios de cuidado canino
               </h3>
-              <p class="proyectos__description-text">
+              <!----Texto de la descripción del proyecto-------------------------->
+              <p class="proyect__description-text">
                 Desarrollo de una aplicación web fullstack para un negocio de
                 servicios de cuidado canino, con landing page responsiva,
                 sistema de reservaciones, registro multi-paso de mascotas,
@@ -219,16 +295,19 @@
                 desarrollo web moderno y desplegando la versión final en
                 producción.
               </p>
-              <ul class="proyectos__description-links">
-                <li class="proyectos__description-link__btn">
+              <!----Contenedor de los links al proyect---------------------------->
+              <ul class="proyect__description-links">
+                <!----Boton de los links del proyecto-------------------------------->
+                <li class="proyect__description-link__btn">
                   <a
                     href="https://donnysaury.manus.space"
                     target="_blank"
                     rel="noopener noreferrer"
-                    ><img src="./img/demo_icon.png" alt="Demo en vivo"
+                    ><img src="./img/demo_icon.png" alt="demo en vivo"
                   /></a>
                 </li>
-                <li class="proyectos__description-link__btn">
+                <!----Boton de los links del proyecto-------------------------------->
+                <li class="proyect__description-link__btn">
                   <a
                     href="https://github.com/safrarugon/DonnySaury.git"
                     target="_blank"
@@ -241,7 +320,7 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <footer class="contact">
         <h2 class="contact__title">Contacto</h2>
         <div class="contact__glow"></div>
         <div class="contact__info">
@@ -282,7 +361,7 @@
             ><img src="./img/x_logo.svg" alt="X"
           /></a>
         </div>
-      </section>
+      </footer>
     </main>
   </body>
 </html>
