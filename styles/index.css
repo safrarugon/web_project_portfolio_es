@@ -335,6 +335,14 @@ body {
   flex-direction: column;
   text-align: center;
 }
+/*----Titulo del contenedor de contacto-----------------------------*/
+.contact__title {
+  font-family: "Archivo Black", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
 /*----Elipce del contenedor de contacto-----------------------------*/
 .contact__glow {
   position: absolute;
@@ -346,14 +354,6 @@ body {
   z-index: 0;
   left: 50%;
   transform: translateX(-50%);
-}
-/*----Titulo del contenedor de contacto-----------------------------*/
-.contact__title {
-  font-family: "Archivo Black", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.6;
-  letter-spacing: 0;
 }
 /*----Mail de contacto----------------------------------------------*/
 .mail {
@@ -370,7 +370,7 @@ body {
   gap: 30px;
   margin-top: 30px;
 }
-/*----Iconos de contacto--------------------------------------------*/
+/*----Icono de contacto---------------------------------------------*/
 .contact__icon {
   opacity: 0.5;
 }
